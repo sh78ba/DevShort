@@ -4,6 +4,7 @@ import com.url.DevShort.dtos.RegisterRequest;
 import com.url.DevShort.models.User;
 import com.url.DevShort.service.UserService;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @AllArgsConstructor
 public class AuthController {
 
+    @Autowired
     private UserService userService;
     @PostMapping("/public/register")
     public ResponseEntity<?>registerUser(@RequestBody RegisterRequest registerRequest){
