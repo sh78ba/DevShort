@@ -1,5 +1,6 @@
 package com.url.DevShort.controller;
 
+import com.url.DevShort.dtos.LoginRequest;
 import com.url.DevShort.dtos.RegisterRequest;
 import com.url.DevShort.models.User;
 import com.url.DevShort.service.UserService;
@@ -18,6 +19,12 @@ public class AuthController {
 
     @Autowired
     private UserService userService;
+
+    @PostMapping("/public/login")
+    public ResponseEntity<?>loginUser(@RequestBody LoginRequest loginRequest){
+        return ResponseEntity.ok(userService.authenticatedUser(loginRequest));
+    }
+
     @PostMapping("/public/register")
     public ResponseEntity<?>registerUser(@RequestBody RegisterRequest registerRequest){
     User user=new User();
