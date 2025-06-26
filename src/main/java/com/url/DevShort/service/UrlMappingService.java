@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.time.LocalDateTime;
+import java.util.List;
 import java.util.Random;
 
 @Service
@@ -45,5 +46,11 @@ public class UrlMappingService {
             shorturl.append(characters.charAt(random.nextInt(characters.length())));
         }
         return shorturl.toString();
+    }
+
+    public List<UrlMappingDTO> getUrlsByUser(User user) {
+        return urlMappingRepository.findByUser(user).stream().map(
+                this::convertTODto
+        ).toList();
     }
 }
