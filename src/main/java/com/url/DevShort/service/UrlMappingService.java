@@ -85,4 +85,9 @@ public class UrlMappingService {
         return clickEvents.stream().collect(Collectors.groupingBy(click->
                 click.getClickDate().toLocalDate(),Collectors.counting()));
     }
+
+    public UrlMapping getOriginalUrl(String shorturl) {
+        UrlMapping urlMapping=urlMappingRepository.findByShortUrl(shorturl);
+        return  urlMapping;
+    }
 }
