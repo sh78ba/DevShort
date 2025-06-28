@@ -10,7 +10,7 @@ const AboutPage = () => {
         <p className="text-gray-700 text-sm mb-8 xl:w-[60%] lg:w-[70%] sm:w-[80%] w-full">
           DevShort is your smart solution for link management. Whether you're
           sharing content, tracking campaigns, or just cleaning up messy URLs,
-          DevShort gives you the tools to shorten, customize, and monitor your
+          DevShort gives you the tools to shorten, and monitor your
           links with ease. Simplify your workflow and maximize engagement with
           real-time insights and secure link handling — all in one powerful
           platform.

@@ -23,12 +23,5 @@ export default {
       },
     },
   },
-
-  variants: {
-    extend: {
-      backgroundImage: ["responsive"],
-    },
-  },
-
   plugins: [],
 };
