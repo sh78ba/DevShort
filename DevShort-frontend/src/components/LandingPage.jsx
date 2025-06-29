@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useContext } from "react";
 import Card from "./Card";
 import { motion } from "framer-motion"; // corrected the import
+import { useStoreContext } from "../contextApi/ContextApi";
 
 const cardVariants = {
   hidden: { opacity: 0, y: 40 },
@@ -16,6 +17,8 @@ const cardVariants = {
 };
 
 const LandingPage = () => {
+    const {token} =useStoreContext();
+ 
   return (
     <div className="min-h-[calc(100vh-64px)] lg:px-14 sm:px-8 px-4">
       {/* Hero Section */}
