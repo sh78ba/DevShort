@@ -78,7 +78,7 @@ const ShortenItem = ({ originalUrl, shortUrl, clickCount, createdDate }) => {
               className="text-[17px] font-montserrat font-[600] text-linkColor"
               to={shortUrlFull}
             >
-              {subDomain + "/s/" + shortUrl}
+              {subDomain + shortUrl}
             </Link>
             <FaExternalLinkAlt className="text-linkColor" />
           </div>
