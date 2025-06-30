@@ -20,7 +20,7 @@ const ShortenItem = ({ originalUrl, shortUrl, clickCount, createdDate }) => {
   const [analyticsData, setAnalyticsData] = useState([]);
 
   const subDomain = import.meta.env.VITE_REACT_FRONT_END_URL.replace(/^https?:\/\//, "");
-  const shortUrlFull = `${import.meta.env.VITE_REACT_FRONT_END_URL}/s/${shortUrl}`;
+  const shortUrlFull = `${import.meta.env.VITE_REACT_FRONT_END_URL}/${shortUrl}`;
 
   const handleCopy = async () => {
     try {
