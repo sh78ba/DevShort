@@ -29,7 +29,7 @@ const Login = () => {
         try {
             const { data: response } = await api.post(
                 "/api/auth/public/login",
-                data
+                data,
             );
             console.log(response.token);
             setToken(response.token);

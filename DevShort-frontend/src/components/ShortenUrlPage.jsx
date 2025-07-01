@@ -5,7 +5,7 @@ const ShortenUrlPage = () => {
     const {url}=useParams();
     useEffect(()=>{
         if(url){
-            window.location.href=import.meta.env.VITE_BACKEND_URL+`${url}`;
+            window.location.href=import.meta.env.VITE_BACKEND_URL+"/"+`${url}`;
         }
     },[url])
   return null;

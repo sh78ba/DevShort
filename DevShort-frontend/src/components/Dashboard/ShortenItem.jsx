@@ -19,7 +19,7 @@ const ShortenItem = ({ originalUrl, shortUrl, clickCount, createdDate }) => {
   const [selectedUrl, setSelectedUrl] = useState("");
   const [analyticsData, setAnalyticsData] = useState([]);
 
-  const subDomain = import.meta.env.VITE_REACT_FRONT_END_URL.replace(/^https?:\/\//, "");
+  const subDomain =import.meta.env.VITE_REACT_FRONT_END_URL.replace(/^https?:\/\//, "");
   const shortUrlFull = `${import.meta.env.VITE_REACT_FRONT_END_URL}/${shortUrl}`;
 
   const handleCopy = async () => {
@@ -78,7 +78,7 @@ const ShortenItem = ({ originalUrl, shortUrl, clickCount, createdDate }) => {
               className="text-[17px] font-montserrat font-[600] text-linkColor"
               to={shortUrlFull}
             >
-              {subDomain + shortUrl}
+              {subDomain +"/"+ shortUrl}
             </Link>
             <FaExternalLinkAlt className="text-linkColor" />
           </div>
