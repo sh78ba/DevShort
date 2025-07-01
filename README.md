@@ -10,10 +10,15 @@
 
 ![DevShort Homepage](./project-images/Home.png)
 <br>
+
+### 🔗 Dashboard
+
 ![DevShort Dashboard1](./project-images/Dashboard.png)
 <br>
 ![DevShort Dashboard2](./project-images/Dashboard2.png)
 <br>
+
+### 🔗 About
 ![DevShort About](./project-images/About.png)
 <br>
 ---
